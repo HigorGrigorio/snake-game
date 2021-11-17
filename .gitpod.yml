@@ -1,3 +1,5 @@
+ports:
+    -port: 3000
 tasks:
     -before: cd client.html
     command: npm serve
