@@ -1,2 +1,3 @@
 tasks:
+    name: "init"
     command: npm serve
