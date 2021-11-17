@@ -1,2 +1,5 @@
 tasks:
-    init: npm serve
+    -before: cd client.html
+    command: npm serve
+
+
