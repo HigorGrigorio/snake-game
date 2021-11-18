@@ -1,3 +1,4 @@
 tasks:
-  - init: npx serve y
+  - init: npx serve
+    before: y
     command: cd client.html
