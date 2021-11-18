@@ -2,26 +2,43 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>snake-game</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>snake-game</title>
 
-    <style>
-        #screen {
-            border: 1px solid #ccc;
-            image-rendering: crisp-edges;
-            image-rendering: pixelated;
-            image-rendering: -moz-crisp-edges;
-            height: 400px;
-            width: 400px;
-        }
-    </style>
+  <style>
+    #screen {
+      border: 1px solid #ccc;
+      image-rendering: crisp-edges;
+      image-rendering: pixelated;
+      image-rendering: -moz-crisp-edges;
+      height: 600px;
+      width: 600px;
+    }
+
+    main {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+
+    #score {
+      padding: 0 1rem ;
+      font-size:  2rem;
+      text-transform:uppercase;
+    }
+  </style>
 </head>
 
 <body>
-    <canvas id="screen" width="16" height="16"  ></canvas>
-    <script src="./src//assets//script/main.js" ></script>
+  <main>
+    <canvas id="screen" width="32" height="32"></canvas>
+    <span>
+      <p id="score">Score: 0</p>
+    </span>
+  </main>
+
+  <script src="./src//assets//script/main.js"></script>
 </body>
 
 </html>
